@@ -1,0 +1,35 @@
+RewriteEngine On    # Turn on the rewriting engine
+# RewriteRule ^read$ read.php [NC,L]
+# RewriteRule ^read/([0-9_-]*)$ read.php?id=$1 [NC,L]
+
+# RewriteRule ^update$ update.php [NC,L]
+# RewriteRule ^delete$ delete.php [NC,L]
+RewriteRule ^pages/([0-9_-]*)$ data.php?page=$1 [NC,L]
+RewriteRule ^page/update$ data.php [NC,L]
+RewriteRule ^page$ data.php [NC,L]
+
+#route
+#endpoint 
+
+# 1) Get :      http://localhost/wp_api/page
+
+# body {
+# "id": "2138"
+# }
+
+
+# 2)
+# Get  :   http://localhost/wp_api/pages/3
+
+
+# 3)post :  http://localhost/wp_api/page/update
+# {
+# "id": "2139",
+# "post_type": "page",
+# "post_title": "Updated Post Tilte raj"
+# }
+
+
+## i just do it today only , laptop is not working from last fews days .i did not understand the endpoint properly so thats why everyting is not properly i think , it can be more structurezied . thank you . 
+
+
